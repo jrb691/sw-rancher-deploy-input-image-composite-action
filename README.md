@@ -1,5 +1,5 @@
 # Deploy to Rancher Cluster - Input Image Tag
-Use if you want to be able to manually input what image you wish to deploy into rancher.
+Use if you want to be able to manually input what image tag to deploy into rancher.
 
 ### Parameters: 
 Name | Type |        | Default |
