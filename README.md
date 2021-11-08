@@ -20,8 +20,8 @@ Usage:
           kube_config_data: ${{ secrets.KUBE_CONFIG_NP_RANCHER }}
           image_tag: ${{ github.event.inputs.image_tag }}
           # Optional
-          # labels_path: kubernetes/labels
-          # deployment_yaml_path: kubernetes/deployment.yml
-          # namespace: gitactions
-          # files: kubernetes/.
+          # labels_path: 'kubernetes/labels'
+          # deployment_yaml_path: 'kubernetes/deployment.yml'
+          # namespace: 'gitactions'
+          # files: 'kubernetes/.'
 ```
