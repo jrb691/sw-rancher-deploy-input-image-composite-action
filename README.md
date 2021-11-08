@@ -18,7 +18,7 @@ Usage:
         with:
           environment: dev
           kube_config_data: ${{ secrets.KUBE_CONFIG_NP_RANCHER }}
-          image_tag: ${{ github.event.input.image_tag }}
+          image_tag: ${{ github.event.inputs.image_tag }}
           # Optional
           # labels_path: kubernetes/labels
           # deployment_yaml_path: kubernetes/deployment.yml
