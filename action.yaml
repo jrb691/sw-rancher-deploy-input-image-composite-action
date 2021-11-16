@@ -79,7 +79,7 @@ runs:
       with:
         find: "@DOCKER_TAG"
         replace: ${{ inputs.image_tag }}
-        include: 'kubernetes/*.yml'
+        include: 'kubernetes/*.yml kubernetes/*.yaml'
     
     - name: 📦 Deploy to np rancher cluster
       if: ${{ inputs.environment != 'prod' }}
