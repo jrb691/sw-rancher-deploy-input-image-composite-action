@@ -2,8 +2,8 @@
 Use if you want to be able to manually input what image tag to deploy into rancher.
 
 ### Parameters: 
-Name | Type |        | Default |
----  | ---  | ---------- | ------- |
+Name | Type |        | Default | Notes |
+---  | ---  | ---------- | ------- | ---- |
 `environment` | String | Required* | `dev`
 `np_kube_config_data` | Secret | Required* |
 `prod_kube_config_data` | Secret | Required* |
@@ -13,7 +13,7 @@ Name | Type |        | Default |
 `deployment_yaml_path` | Path | *Optional* | `kubernetes/deployment.yml`
 `namespace` | String | *Optional* | `gitactions`
 `files`| String | *Optional* | `kubernetes/.`
-`image_registry_provider` | String | *Optional* | `artifactory`
+`image_registry_provider` | String | *Optional* | `artifactory` | Use this parameter to the skip docker artifactory image promotion step.
 
 Usage:
 ```yaml
@@ -29,6 +29,5 @@ Usage:
           # deployment_yaml_path: 'kubernetes/deployment.yml'
           # namespace: 'gitactions'
           # files: 'kubernetes/.'
-          ### USE THE BELOW PARAMETER FOR SKIPPING DOCKER ARTIFACTORY IMAGE PROMOTION 
           # image_registry_provider: acr
 ```
