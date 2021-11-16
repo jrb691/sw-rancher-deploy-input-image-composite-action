@@ -13,6 +13,7 @@ Name | Type |        | Default |
 `deployment_yaml_path` | Path | *Optional* | `kubernetes/deployment.yml`
 `namespace` | String | *Optional* | `gitactions`
 `files`| String | *Optional* | `kubernetes/.`
+`image_registry_provider` | String | *Optional* | `artifactory`
 
 Usage:
 ```yaml
@@ -28,4 +29,6 @@ Usage:
           # deployment_yaml_path: 'kubernetes/deployment.yml'
           # namespace: 'gitactions'
           # files: 'kubernetes/.'
+          ### USE THE BELOW PARAMETER FOR SKIPPING DOCKER ARTIFACTORY IMAGE PROMOTION 
+          # image_registry_provider: acr
 ```
