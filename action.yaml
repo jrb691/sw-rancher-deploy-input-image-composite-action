@@ -74,7 +74,7 @@ runs:
         replace: ${{ steps.read_labels.outputs.contents }}
         include: ${{ inputs.deployment_yaml_path }}
    
-    - name: 🏷 Replace Image Tag YML
+    - name: 🏷 Replace Image Tag
       uses: jacobtomlinson/gha-find-replace@v2
       with:
         find: "@DOCKER_TAG"
