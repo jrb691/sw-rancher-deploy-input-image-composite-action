@@ -112,7 +112,7 @@ runs:
     
     - name: 🚀 Docker image promote 
       uses: sherwin-williams-co/sw-promote-docker-image-action@main
-      if: ${{ inputs.environment != 'dev' && inputs.image_registry_provider == "artifactory" }}
+      if: ${{ inputs.environment != 'dev' && inputs.image_registry_provider == 'artifactory' }}
       with:
         environment: ${{ inputs.environment }}
         image_name: ${{ inputs.image_name }}
