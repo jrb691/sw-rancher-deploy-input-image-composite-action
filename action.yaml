@@ -108,7 +108,7 @@ runs:
     
     - name: 🚀 Docker image promote 
       uses: sherwin-williams-co/sw-promote-docker-image-action@main
-      if: ${{ inputs.environment != 'dev' }}
+      if: ${{ inputs.environment != 'dev' && contains( secrets.image_registry, "artifactory.sherwin.com" ) }}
       with:
         environment: ${{ inputs.environment }}
         image_name: ${{ inputs.image_name }}
