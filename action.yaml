@@ -111,7 +111,7 @@ runs:
         namespace: ${{ inputs.environment }}-${{ inputs.namespace }}
     
     - name: 🚀 Docker image promote 
-      uses: sherwin-williams-co/sw-promote-docker-image-action@main
+      uses: sherwin-williams-co/sw-promote-docker-image-composite-action@main
       if: ${{ inputs.environment != 'dev' && inputs.image_registry_provider == 'artifactory' }}
       with:
         environment: ${{ inputs.environment }}
